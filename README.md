@@ -1,4 +1,4 @@
 # my_card
 My Personal Card App
-y_Card is basic personal details app using flutter.
+my_card is basic personal details app using flutter.
 

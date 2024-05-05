@@ -12,14 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.pink[800],
-        appBar: AppBar(
-          title: Text('Smakshi Alhat'),
-          centerTitle: true,
-          backgroundColor: Colors.pink.shade100,
-        ),
+        backgroundColor: Colors.teal.shade300,
         body: Container(),
       ),
     );
   }
+
+  hello(){}
 }
+
+

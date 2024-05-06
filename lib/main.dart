@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.deepPurple.shade100,
         body: Container(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            // crossAxisAlignment: CrossAxisAlignment.stretch,  //parent has influence on child
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
@@ -34,32 +34,97 @@ class MyApp extends StatelessWidget {
                       color: Colors.indigo.shade800,
                       fontFamily: 'Pacifico'),
                 ),
-                height: 50.0,
+                height: 60.0,
                 alignment: Alignment.center,
               ),
               // SizedBox(
               //   height: 20,
               // ),
               Container(
-                child: Text('Flutter Developer'),
+                child: Text(
+                  'FLUTTER DEVELOPER',
+                  style: TextStyle(
+                    fontFamily: 'Source-Sans',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18.0,
+                    color: Colors.indigo.shade400,
+                    letterSpacing: 1.5,
+                  ),
+                ),
                 alignment: Alignment.center,
               ),
               Container(
-                child: Text('8856827789'),
-                alignment: Alignment.center,
                 color: Colors.white,
-                height: 45.0,
-                margin: EdgeInsets.fromLTRB(70, 5, 70, 5),
-                // padding: EdgeInsets.only(left: 20),
+                width: 275,
+                margin: EdgeInsets.symmetric(horizontal: 5,vertical: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(
+                      Icons.phone,
+                      color: Colors.black,
+                      size: 28,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      child: Text(
+                        '8856827789',
+                        style: TextStyle(
+                          letterSpacing: 1.5,
+                          fontSize: 15,
+                        ),
+                      ),
+                      alignment: Alignment.center,
+                      color: Colors.white,
+                      height: 50.0,
+                      // width: 270.0,
+                      // margin: EdgeInsets.fromLTRB(70, 5, 70, 5),
+                      // padding: EdgeInsets.only(left: 20),
+                    )
+                  ],
+                ),
               ),
               Container(
-                child: Text('smakshina1306@gmail.com'),
-                alignment: Alignment.center,
                 color: Colors.white,
-                height: 45.0,
-                margin: EdgeInsets.fromLTRB(70, 5, 70, 5),
-                // padding: EdgeInsets.only(left: 20),
-              )
+                width: 275,
+                margin: EdgeInsets.symmetric(horizontal: 5,vertical: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(
+                      Icons.email,
+                      color: Colors.black,
+                      size: 28,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      child: Text(
+                        'smakshina1306@gmail.com',
+                        style: TextStyle(
+                          // letterSpacing: 1.5,
+                          fontSize: 15,
+                        ),
+                      ),
+                      alignment: Alignment.center,
+                      color: Colors.white,
+                      height: 50.0,
+                      // width: 270.0,
+                      // margin: EdgeInsets.fromLTRB(70, 5, 70, 5),
+                      // padding: EdgeInsets.only(left: 20),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),

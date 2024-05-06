@@ -28,11 +28,18 @@ class MyApp extends StatelessWidget {
               Container(
                 child: Text(
                   'Smakshi A',
-
+                  style: TextStyle(
+                      fontSize: 40,
+                      // fontWeight: FontWeight.bold,
+                      color: Colors.indigo.shade800,
+                      fontFamily: 'Pacifico'),
                 ),
-                height: 30.0,
+                height: 50.0,
                 alignment: Alignment.center,
               ),
+              // SizedBox(
+              //   height: 20,
+              // ),
               Container(
                 child: Text('Flutter Developer'),
                 alignment: Alignment.center,
